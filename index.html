@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Trophies</title>
+  <style>
+    :root {
+      --bg-color: #0b0d17;
+      --card-bg: #16192b;
+      --title-color: #3b0066; /* Dark Purple */
+      --accent-color: #8a2be2;
+      --text-muted: rgba(241, 242, 246, 0.45); /* Semi-transparent */
+      --top-left-color: rgba(46, 204, 113, 0.5); /* Semi-transparent Green */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Top-left green transparent label */
+    .top-left-text {
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      color: var(--top-left-color);
+      font-size: 0.85rem;
+      font-family: monospace;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      padding: 2.5rem;
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      max-width: 600px;
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: var(--title-color);
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+      text-shadow: 0 0 8px rgba(59, 0, 102, 0.5);
+    }
+
+    .divider {
+      font-weight: 700;
+      color: var(--accent-color);
+      letter-spacing: 3px;
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .project-text {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Secret code hidden by default, illuminates on hover */
+    .secret-code {
+      position: absolute;
+      bottom: 8px;
+      right: 10px;
+      color: rgba(241, 242, 246, 0.85);
+      font-size: 0.55rem;
+      font-family: monospace;
+      letter-spacing: 0.5px;
+      margin: 0;
+      opacity: 0; /* Fully invisible */
+      transition: opacity 0.3s ease; /* Smooth fade-in */
+      user-select: all;
+      cursor: default;
+      padding: 10px; /* Expands the hit-area for easier hovering */
+    }
+
+    .secret-code:hover {
+      opacity: 1; /* Fully visible when hovered */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-left-text">{universaltrophies.html}</div>
+
+  <div class="container">
+    <h1>Universal Trophies</h1>
+    <div class="divider">--PROJECTS--</div>
+    <p class="project-text">
+      We are actively engineering a high-precision quantum containment device designed to generate and sustain a artificial singularity. Our primary objective centers on balancing gravitational field dynamics to continuously stabilize the singularity’s inner core, preventing catastrophic containment breaches while unlocking unprecedented spatial anomalies.
+    </p>
+  </div>
+
+  <div class="secret-code">0gt47fdk2LzCS218HJgj</div>
+
+</body>
+</html>
